@@ -1,0 +1,19 @@
+{
+  "BITD": {
+    "SkillsInsight": "Intelligenz",
+    "SkillsHunt": "Spurenlesen",
+    "SkillsStudy": "Studieren",
+    "SkillsSurvey": "Überblick verschaffen",
+    "SkillsTinker": "Wissen",
+    "SkillsProwess": "Physisch",
+    "SkillsFinesse": "Geschicklichkeit",
+    "SkillsSkirmish": "Nahkampf",
+    "SkillsProwl": "Schleichen",
+    "SkillsWreck": "Schießen",
+    "SkillsResolve": "Charisma",
+    "SkillsCommand": "Einschüchtern",
+    "SkillsConsort": "Verhandeln",
+    "SkillsSway": "Überzeugen",
+    "SkillsAttune": "Einstimmen"
+  }
+}

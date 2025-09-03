@@ -1,0 +1,21 @@
+{
+  "name": "my-bitd-skill-rename",
+  "title": "BitD Skill Rename",
+  "description": "Überschreibt die Skill-Namen für Blades in the Dark.",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "Dein Name" }
+  ],
+  "minimumCoreVersion": "12",
+  "compatibleCoreVersion": "12",
+  "system": ["blades-in-the-dark"],
+  "languages": [
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "path": "modules/my-bitd-skill-rename/lang/de.json"
+    }
+  ],
+  "manifest": "https://example.com/module.json",
+  "download": "https://example.com/my-bitd-skill-rename.zip"
+}
