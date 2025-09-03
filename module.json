@@ -1,10 +1,10 @@
 {
-  "name": "my-bitd-skill-rename",
-  "title": "BitD Skill Rename",
-  "description": "Überschreibt die Skill-Namen für Blades in the Dark.",
+  "name": "sea-of-monsters",
+  "title": "Sea of Monsters",
+  "description": "Überschreibt die Skill-Namen für Blades in the Dark damit sie zu Sea of Monsters passen.",
   "version": "1.0.0",
   "authors": [
-    { "name": "Dein Name" }
+    { "name": "Basti407" }
   ],
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "12",
@@ -13,9 +13,9 @@
     {
       "lang": "de",
       "name": "Deutsch",
-      "path": "modules/my-bitd-skill-rename/lang/de.json"
+      "path": "modules/sea-of-monsters/lang/de.json"
     }
   ],
   "manifest": "https://example.com/module.json",
-  "download": "https://example.com/my-bitd-skill-rename.zip"
+  "download": "https://example.com/sea-of-monsters.zip"
 }
