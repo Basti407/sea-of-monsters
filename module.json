@@ -4,11 +4,15 @@
   "description": "Überschreibt die Skill-Namen für Blades in the Dark damit sie zu Sea of Monsters passen.",
   "version": "1.0.0",
   "authors": [
-    { "name": "Basti407" }
+    {
+      "name": "Basti407"
+    }
   ],
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "12",
-  "system": ["blades-in-the-dark"],
+  "system": [
+    "blades-in-the-dark"
+  ],
   "languages": [
     {
       "lang": "de",
@@ -16,6 +20,6 @@
       "path": "modules/sea-of-monsters/lang/de.json"
     }
   ],
-  "manifest": "https://example.com/module.json",
-  "download": "https://example.com/sea-of-monsters.zip"
+  "manifest": "https://raw.githubusercontent.com/Basti407/sea-of-monsters/refs/heads/main/module.json",
+  "download": "https://example.com/wird-gleich-erstellt.zip"
 }
