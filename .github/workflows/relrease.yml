@@ -8,6 +8,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 👈 nötig für Release-Upload
 
     steps:
       - name: Checkout repository
