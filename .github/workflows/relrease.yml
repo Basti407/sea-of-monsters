@@ -3,13 +3,13 @@ name: Build and Release FoundryVTT Module
 on:
   push:
     tags:
-      - "v*.*.*"   # wird ausgelöst, wenn du ein neues Tag wie v1.0.1 pushst
+      - "v*.*.*"   # wird ausgelöst, wenn du ein Tag pushst wie v1.0.5
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # 👈 nötig für Release-Upload
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -20,13 +20,29 @@ jobs:
         with:
           node-version: 18
 
-      - name: Read module version
-        id: get_version
+      - name: Extract tag version
+        id: tag
         run: |
-          VERSION=$(jq -r .version module.json)
+          VERSION=${GITHUB_REF##*/}
+          VERSION=${VERSION#v}   # remove leading 'v'
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-      - name: Create zip
+      - name: Update module.json with version and download URL
+        run: |
+          VERSION=${{ steps.tag.outputs.version }}
+          DOWNLOAD_URL="https://github.com/${GITHUB_REPOSITORY}/releases/download/v$VERSION/sea-of-monsters.zip"
+          
+          # Update version
+          jq --arg v "$VERSION" '.version=$v' module.json > module.tmp.json
+          mv module.tmp.json module.json
+          
+          # Update download
+          jq --arg url "$DOWNLOAD_URL" '.download=$url' module.json > module.tmp.json
+          mv module.tmp.json module.json
+          
+          cat module.json  # zum Debuggen
+
+      - name: Prepare ZIP folder
         run: |
           mkdir -p dist
           mkdir -p package/sea-of-monsters

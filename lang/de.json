@@ -1,19 +1,26 @@
 {
   "BITD": {
-    "SkillsInsight": "Intelligenz",
+    "Stress": "Ausdauer",
+
+    "AttributesIntelligence": "Intelligenz",
     "SkillsHunt": "Spurenlesen",
     "SkillsStudy": "Studieren",
-    "SkillsSurvey": "Überblick verschaffen",
-    "SkillsTinker": "Wissen",
-    "SkillsProwess": "Physisch",
+    "SkillsSurvey": "Orientieren",
+    "SkillsKnowledge": "Wissen",
+    "SkillsNavigate": "Navigieren",
+
+    "AttributesPhysical": "Physisch",
     "SkillsFinesse": "Geschicklichkeit",
     "SkillsSkirmish": "Nahkampf",
     "SkillsProwl": "Schleichen",
-    "SkillsWreck": "Schießen",
-    "SkillsResolve": "Charisma",
-    "SkillsCommand": "Einschüchtern",
-    "SkillsConsort": "Verhandeln",
-    "SkillsSway": "Überzeugen",
-    "SkillsAttune": "Einstimmen"
+    "SkillsShoot": "Schießen",
+    "SkillsStrength": "Kraft",
+
+    "AttributesCharisma": "Charisma",
+    "SkillsIntimidate": "Einschüchtern",
+    "SkillsNegotiate": "Verhandeln",
+    "SkillsPersuate": "Überzeugen",
+    "SkillsDeceive": "Täuschen",
+    "SkillsMagic": "Magie"
   }
 }
