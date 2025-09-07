@@ -29,7 +29,7 @@ jobs:
       - name: Create zip
         run: |
           mkdir -p dist
-          zip -r "dist/sea-of-monsters.zip" . -x ".git*" -x ".github/*"
+          zip -r "dist/sea-of-monsters.zip" sea-of-monsters -x "*.git*" -x "*.github/*"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
