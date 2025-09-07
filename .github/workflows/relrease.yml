@@ -29,10 +29,10 @@ jobs:
       - name: Create zip
         run: |
           mkdir -p dist
-          mkdir -p sea-of-monsters
-          cp -r module.json lang sea-of-monsters/
-          cd sea-of-monsters
-          zip -r "../dist/sea-of-monsters.zip" .
+          mkdir -p package/sea-of-monsters
+          cp -r module.json lang package/sea-of-monsters/
+          cd package
+          zip -r "../dist/sea-of-monsters.zip" sea-of-monsters
           cd ..
 
       - name: Create Release
