@@ -81,7 +81,7 @@
       "special": 0
     },
     "attributes": {
-        "intelligence": {
+        "insight": {
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
@@ -119,7 +119,7 @@
             }
           }
         },
-        "physical": {
+        "prowess": {
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
@@ -157,7 +157,7 @@
             }
           }
         },
-        "charisma": {
+        "resolve": {
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
