@@ -3,10 +3,10 @@
     "Stress": "Ausdauer",
 
     "SkillsInsight": "Intelligenz",
-    "SkillsHunt": "Spurenlesen",
+    "SkillsHunt": "Navigieren",
     "SkillsStudy": "Wissen",
-    "SkillsSurvey": "Orientieren",
-    "SkillsTinker": "Navigieren",
+    "SkillsSurvey": "Einschätzen",
+    "SkillsTinker": "Magie",
 
     "SkillsProwess": "Physisch",
     "SkillsFinesse": "Geschicklichkeit",
@@ -18,6 +18,6 @@
     "SkillsCommand": "Einschüchtern",
     "SkillsConsort": "Verhandeln",
     "SkillsSway": "Überzeugen",
-    "SkillsAttune": "Magie"
+    "SkillsAttune": "Täuschen"
   }
 }
