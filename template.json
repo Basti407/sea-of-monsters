@@ -87,8 +87,14 @@
           "bonus": 0,
           "label": "BITD.AttributesIntelligence",
           "skills": {
-            "navigate": {
-              "label": "BITD.SkillsNavigate",
+            "hunt": {
+              "label": "BITD.SkillsHunt",
+              "value": 0,
+              "max": 3,
+              "min": 0
+            },
+            "study": {
+              "label": "BITD.SkillsKnowledge",
               "value": 0,
               "max": 3,
               "min": 0
@@ -99,20 +105,8 @@
               "max": 3,
               "min": 0
             },
-            "hunt": {
-              "label": "BITD.SkillsHunt",
-              "value": 0,
-              "max": 3,
-              "min": 0
-            },
-            "study": {
-              "label": "BITD.SkillsStudy",
-              "value": 0,
-              "max": 3,
-              "min": 0
-            },
-            "knowledge": {
-              "label": "BITD.SkillsKnowledge",
+            "tinker": {
+              "label": "BITD.SkillsNavigate",
               "value": 0,
               "max": 3,
               "min": 0
@@ -123,14 +117,8 @@
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
-          "label": "BITD.AttributesPhysical",
+          "label": "BITD.SkillsProwess",
           "skills": {
-            "strength": {
-              "label": "BITD.SkillsStrength",
-              "value": 0,
-              "max": 3,
-              "min": 0
-            },
             "finesse": {
               "label": "BITD.SkillsFinesse",
               "value": 0,
@@ -149,8 +137,8 @@
               "max": 3,
               "min": 0
             },
-            "shoot": {
-              "label": "BITD.SkillsShoot",
+            "wreck": {
+              "label": "BITD.SkillsStrength",
               "value": 0,
               "max": 3,
               "min": 0
@@ -161,131 +149,35 @@
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
-          "label": "BITD.AttributesCharisma",
+          "label": "BITD.SkillsResolve",
           "skills": {
-            "channel": {
+            "attune": {
               "label": "BITD.SkillsMagic",
               "value": 0,
               "max": 3,
               "min": 0
             },
-            "intimidate": {
+            "command": {
               "label": "BITD.SkillsIntimidate",
               "value": 0,
               "max": 3,
               "min": 0
             },
-            "negotiate": {
+            "consort": {
               "label": "BITD.SkillsNegotiate",
               "value": 0,
               "max": 3,
               "min": 0
             },
-            "persuate": {
+            "sway": {
               "label": "BITD.SkillsPersuate",
-              "value": 0,
-              "max": 3,
-              "min": 0
-            },
-            "deceive": {
-              "label": "BITD.SkillsDeceive",
               "value": 0,
               "max": 3,
               "min": 0
             }
           }
         }
-    },
-    "items": [
-        {
-            "name": "Pistole",
-            "type": "weapon",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Radschlosspistole"
-        },
-        {
-            "name": "2. Pistole",
-            "type": "weapon",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine weitere Radschlosspistole"
-        },
-        {
-            "name": "Säbel",
-            "type": "weapon",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Klinge mit gekrümmter Schneide"
-        },
-        {
-            "name": "Rüstung",
-            "type": "armor",
-            "quantity": 1,
-            "load": 2,
-            "equipped": false,
-            "notes:": "Eine einfache Rüstung aus Leder"
-        },
-        {
-            "name": "Schwere Rüstung",
-            "type": "armor",
-            "quantity": 1,
-            "load": 3,
-            "equipped": false,
-            "notes:": "Eine schwere Erweiterung aus Metall für die Rüstung"
-        },
-        {
-            "name": "Diebeswerkzeug",
-            "type": "tool",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Ein Satz Werkzeuge zum Aufbrechen von Schlössern und Fallen"
-        },
-        {
-            "name": "Werkzeugkasten",
-            "type": "tool",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Kiste mit einfachen Werkzeugen, wie Hammer, Zange, Meißel, Feile, Säge"
-        },
-        {
-            "name": "Leiter",
-            "type": "tool",
-            "quantity": 1,
-            "load": 2,
-            "equipped": false,
-            "notes:": "Eine einfache Leiter aus Holz"
-        },
-        {
-            "name": "Enterhaken mit Seil",
-            "type": "tool",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Metallhaken an einem 10m langen Seil"
-        },
-        {
-            "name": "Schaufel",
-            "type": "tool",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Schaufel zum Graben"
-        },
-        {
-            "name": "Laterne",
-            "type": "tool",
-            "quantity": 1,
-            "equipped": false,
-            "notes:": "Eine Laterne aus Metall und Glas, betrieben mit Öl"
-        },
-        {
-            "name": "Kletterausrüstung",
-            "type": "tool",
-            "quantity": 1,
-            "load": 2,
-            "equipped": false,
-            "notes:": "Einfache Ausüstung zum Klettern, inkl. Seil, Haken, Karabiner"
-        }
-    ]
+    }
   },
   "crew": {
     "name": "",
@@ -298,6 +190,7 @@
       "visible": false,
       "label": "BITD.Description"
     },
+    "hold": ["strong"],
     "experience": [0],
     "exp_clock": {
       "value": 0,
@@ -305,6 +198,7 @@
       "size": 6,
       "color": "black"
 	  },
+    "hold_types": ["weak", "strong"],
     "coins": {
       "max": 4,
       "value": [0]
@@ -332,7 +226,7 @@
     },
     "max": {
       "heat": 9,
-      "tier": 10,
+      "tier": 4,
       "wanted": 4,
       "rep": 12,
       "exp": 10
