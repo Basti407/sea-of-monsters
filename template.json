@@ -85,7 +85,7 @@
           "exp": 0,
           "exp_max": 6,
           "bonus": 0,
-          "label": "BITD.AttributesIntelligence",
+          "label": "BITD.SkillsInsight",
           "skills": {
             "hunt": {
               "label": "BITD.SkillsHunt",
@@ -94,7 +94,7 @@
               "min": 0
             },
             "study": {
-              "label": "BITD.SkillsKnowledge",
+              "label": "BITD.SkillsStudy",
               "value": 0,
               "max": 3,
               "min": 0
@@ -106,7 +106,7 @@
               "min": 0
             },
             "tinker": {
-              "label": "BITD.SkillsNavigate",
+              "label": "BITD.SkillsTinker",
               "value": 0,
               "max": 3,
               "min": 0
@@ -138,7 +138,7 @@
               "min": 0
             },
             "wreck": {
-              "label": "BITD.SkillsStrength",
+              "label": "BITD.SkillsWreck",
               "value": 0,
               "max": 3,
               "min": 0
@@ -152,25 +152,25 @@
           "label": "BITD.SkillsResolve",
           "skills": {
             "attune": {
-              "label": "BITD.SkillsMagic",
+              "label": "BITD.SkillsAttune",
               "value": 0,
               "max": 3,
               "min": 0
             },
             "command": {
-              "label": "BITD.SkillsIntimidate",
+              "label": "BITD.SkillsCommand",
               "value": 0,
               "max": 3,
               "min": 0
             },
             "consort": {
-              "label": "BITD.SkillsNegotiate",
+              "label": "BITD.SkillsConsort",
               "value": 0,
               "max": 3,
               "min": 0
             },
             "sway": {
-              "label": "BITD.SkillsPersuate",
+              "label": "BITD.SkillsSway",
               "value": 0,
               "max": 3,
               "min": 0
