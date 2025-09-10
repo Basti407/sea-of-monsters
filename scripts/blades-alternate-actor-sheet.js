@@ -19,7 +19,7 @@ export class BladesAlternateActorSheet extends BladesSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["blades-alt", "sheet", "pc", "actor"],
-      template: "modules/bitd-alternate-sheets/templates/actor-sheet.html",
+      template: "modules/sea-of-monsters/templates/actor-sheet.html",
       width: 800,
       height: 1200,
       tabs: [

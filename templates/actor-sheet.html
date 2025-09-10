@@ -9,16 +9,16 @@
         <div class="status-buttons">
           <div class="coins-box {{#if coins_open}}open{{/if}} pointer">
             <div class="mini-view"><div class="placeholder"></div><span class="coin-values label-text">{{system.coins}}/{{system.coins_stashed}}</span></div>
-            <div class="full-view">{{> "modules/bitd-alternate-sheets/templates/parts/coins.html" actor=actor}}</div>
+            <div class="full-view">{{> "modules/sea-of-monsters/templates/parts/coins.html" actor=actor}}</div>
           </div>
           <div class="load-box {{#if load_open}}open{{/if}} pointer">
             <div class="mini-view"><div class="placeholder"></div><span class="load-amounts label-text {{#if (lt loadout max_load)}}below-max{{else if (eq loadout max_load)}}at-max{{else if (gt loadout max_load)}}over-max{{/if}}">{{loadout}}/{{max_load}}</span></div>
-            <div class="full-view">{{> "modules/bitd-alternate-sheets/templates/parts/load.html"}}</div>
+            <div class="full-view">{{> "modules/sea-of-monsters/templates/parts/load.html"}}</div>
           </div>
           <div class="harm-box {{#if harm_open}}open{{/if}} pointer">
             <div class="mini-view harm{{#if (or system.harm.light.one system.harm.light.two)}}-1{{/if}}{{#if
               (or system.harm.medium.one system.harm.medium.two)}}-2{{/if}}{{#if system.harm.heavy.one}}-3{{/if}}"><div class="placeholder"></div></div>
-            <div class="full-view">{{> "modules/bitd-alternate-sheets/templates/parts/harm.html" actor=actor}}</div>
+            <div class="full-view">{{> "modules/sea-of-monsters/templates/parts/harm.html" actor=actor}}</div>
           </div>
 
         </div><div class="stress-trauma-box">
@@ -66,7 +66,7 @@
         {{#each my_abilities}}<span data-tooltip="{{clean-html this.system.description}}" class="v10-tooltip">{{clean-name this.name}}</span>&nbsp;{{#unless @last}}-&nbsp;{{/unless}}{{/each}}
       </div>
       
-      {{> "modules/bitd-alternate-sheets/templates/parts/attributes.html" owner=this.actor}}
+      {{> "modules/sea-of-monsters/templates/parts/attributes.html" owner=this.actor}}
       </section>
     </section>
     <section class="tab-space">
@@ -112,7 +112,7 @@
               <section class="ability-list check-list">
                 {{#each available_playbook_abilities as |ability index|}}
                 {{#with ../actor as |actor|}}
-                  {{> "modules/bitd-alternate-sheets/templates/parts/ability.html" actor=actor ability=ability allow_edit=../../allow_edit}}
+                  {{> "modules/sea-of-monsters/templates/parts/ability.html" actor=actor ability=ability allow_edit=../../allow_edit}}
                 {{/with}}
                 {{/each}}
               </section>
@@ -121,7 +121,7 @@
               <header class="full-bar flex-header context-items"><span>{{localize "bitd-alt.items"}}</span>{{#if allow_edit}}<a class="item-list-add add-button" data-item-type="item" data-group-by="system.class"><i class="fas fa-plus"></i></a>{{/if}}</header>
               {{#each my_items as |item index|}}
                 {{#with ../actor as |actor|}}
-                {{> "modules/bitd-alternate-sheets/templates/parts/item.html" actor=actor item=item}}
+                {{> "modules/sea-of-monsters/templates/parts/item.html" actor=actor item=item}}
                 {{/with}}
               {{/each}}
             </section>
@@ -143,7 +143,7 @@
               <header class="full-bar">&nbsp;</header>
               {{#each generic_items as |item index|}}
                 {{#with ../actor as |actor|}}
-                  {{> "modules/bitd-alternate-sheets/templates/parts/item.html" actor=actor item=item}}
+                  {{> "modules/sea-of-monsters/templates/parts/item.html" actor=actor item=item}}
                 {{/with}}
               {{/each}}
             </section>
@@ -312,7 +312,7 @@
   {{#if isGM}}
     <i class="fas fa-bug debug-toggle {{#if show_debug}}on{{/if}} "></i>
     {{#if show_debug}}
-        {{> "modules/bitd-alternate-sheets/templates/parts/active-effects.html"}}</div>
+        {{> "modules/sea-of-monsters/templates/parts/active-effects.html"}}</div>
         <hr />
         <h3>All Items</h3>
         {{#each actor.items as |item id|}}

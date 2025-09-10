@@ -1,9 +1,9 @@
 <form class="{{cssClass}}" autocomplete="off">
-    {{> "modules/bitd-alternate-sheets/templates/parts/item-header.html"}}
+    {{> "modules/sea-of-monsters/templates/parts/item-header.html"}}
     <section class="flex-vertical">
         <section>
         <h3>{{localize "bitd-alt.StartingSkills"}}</h3>
-        {{> "modules/bitd-alternate-sheets/templates/parts/attributes.html" owner=this.item isitem=true attributes=attributes}}
+        {{> "modules/sea-of-monsters/templates/parts/attributes.html" owner=this.item isitem=true attributes=attributes}}
         </section>
         <section>
         <header><label>{{localize "BITD.Description"}}</label></header>
@@ -17,7 +17,7 @@
         <!-- {{editor system.experience_clues target="system.experience_clues" button=true editable=editable engine="prosemirror"}} -->
 
     {{#if isGM}}
-        {{> "modules/bitd-alternate-sheets/templates/parts/active-effects.html"}}</div>
+        {{> "modules/sea-of-monsters/templates/parts/active-effects.html"}}</div>
     {{/if}}
     </section>
 </form>
